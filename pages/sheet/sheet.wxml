@@ -1,0 +1,6 @@
+<view class="sheets">
+  <view class='songSheets' wx:for='{{list}}' wx:key='id' data-id='{{item.id}}' bindtap='list'>
+    <image src="{{item.img}}" mode="aspectFit"></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>

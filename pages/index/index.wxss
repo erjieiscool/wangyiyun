@@ -1,0 +1,29 @@
+page{
+  padding-bottom:100rpx;
+}
+/*栏目*/
+.column{
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  font-size:10px;
+}
+.column navigator{
+  width:80rpx;
+  height:80rpx;
+  line-height:115rpx;
+  border-radius:50%;
+  background-color:#fff;
+  margin:30rpx 0 10rpx;
+}
+.column navigator image{
+  width:60%;
+  height:52rpx;
+  border:1px solid #fff;
+}
+/*栏目预览*/
+.preview{
+  width:100%;
+  margin-top:25rpx;
+}

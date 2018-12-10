@@ -1,0 +1,46 @@
+<view class='bg-blur'>
+  <view class='details'>
+    <image src='{{list.img}}'></image>
+    <view class='sheetInfo'>
+      <text class='title'>{{list.title}}</text>
+      <view>
+        <image src='{{list.photo}}' mode='aspectFit'></image>
+        <text>{{list.author}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='toolbar'>
+    <view>
+      <image src='http://wx.yinyueping.com/image/app/comment.png'></image>
+      <text>65</text>
+    </view>
+    <view>
+      <image src='http://wx.yinyueping.com/image/app/share.png'></image>
+      <text>109</text>
+    </view>
+    <view>
+      <image src='http://wx.yinyueping.com/image/app/down.png'></image>
+      <text>下载</text>
+    </view>
+    <view>
+      <image src='http://wx.yinyueping.com/image/app/up.png'></image>
+      <text>赞</text>
+    </view>
+  </view>
+</view>
+<!--歌单歌曲-->
+<view class='play'>
+  <view>
+    <image src='http://wx.yinyueping.com/image/app/start.png' mode='aspectFit'></image>
+    <text>播放全部</text>
+  </view>
+</view>
+  <!--歌曲组件-->
+  <song wx:for="{{song}}" wx:key='id' wx:index='index' wx:if='{{index < 10}}' title='{{item.title}}' singer='{{item.singer}}' epname='{{item.epname}}' coverImgUrl='{{item.coverImgUrl}}' data-index='{{index}}' bindtap='song'></song>
+  <!--播放器组件-->
+  <player title='{{playing.title}}' singer='{{playing.singer}}' coverImgUrl='{{playing.coverImgUrl}}' btnsrc='{{btnsrc}}' bindprev='prev' bindplayer='player' bindnext='next' bindplaylist='playlist'></player>
+  <!--播放列表-->
+  <view class='playlist {{playlist}}'>
+    <view wx:for='{{song}}' wx:key='id' wx:index='index' wx:if='{{index < 10}}' data-index='{{index}}'  bindtap='song'>{{item.title}} - {{item.singer}}</view>
+    <image src='http://wx.yinyueping.com/image/app/close.png' class='close' mode='aspectFit' bindtap='close'></image>
+  </view>
