@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/everyday/everyday",
+    "pages/list/list",
+    "pages/news/news",
+    "pages/comment/comment",
+    "pages/details/details",
+    "pages/ranking/ranking",
+    "pages/sheet/sheet",
+    "pages/singer/singer",
+    "component/player/player",
+    "component/song/song",
+    "component/list/list",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#45ADC6",
+    "navigationBarTitleText": "音乐瓶",
+    "navigationBarTextStyle": "white"
+  }
+}

@@ -1,0 +1,160 @@
+page{
+  width:100%;
+  background:url('http://www.zhuimi.co/img/bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  box-sizing:border-box;
+  font-size:14px;
+  color:#fff;
+}
+/*导航栏*/
+.nav{
+  width:100%;
+  height:60rpx;
+  background:#45ADC6;
+}
+.nav>view{
+  width:50%;
+  height:60rpx;
+  margin:0 auto;
+  display:flex;
+  justify-content:space-around;
+}
+.nav image{
+  width:50rpx;
+  height:50rpx;
+  padding:5rpx;
+}
+/*轮播图*/
+swiper,swiper-item,swiper-item image{
+  width:100%;
+  height:336rpx;
+  margin-top:4rpx;
+}
+/*顶部标题栏*/
+page>.title{
+  background:#45ADC6;
+  padding-bottom:10rpx;
+}
+/*歌单组件*/
+.sheets{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+.songSheets{
+  width:32%;
+  height:340rpx;
+  font-size:11px;
+  font-weight:normal;
+  display:flex;
+  flex-direction:column;
+  margin-left:1%;
+}
+.songSheets image{
+  width:100%;
+  height:240rpx;
+}
+.songSheets text{
+  padding-top:10rpx;
+}
+/*加载更多*/
+.load{
+  border:1px solid #fff;
+  width:200rpx;
+  padding:5rpx;
+  border-radius:5rpx;
+  text-align:center;
+  margin:20rpx auto;
+}
+/*居中标题*/
+.ctitle{
+  text-align:center;
+  margin:30rpx 0;  
+}
+/*背景标题*/
+view.heading{
+  width:100%;
+  height:50rpx;
+  line-height:50rpx;
+  text-align:center;
+  background:rgba(99, 237, 241, 0.3);
+}
+/*播放全部*/
+.banner image{
+  width:100%;
+  height:345rpx;
+}
+.play{
+  width:100%;
+  height:60rpx;
+  display:flex;
+  justify-content:space-between; 
+  font-size:12px;
+  border-bottom:1px solid rgba(204,204,204,.4);
+
+}
+.play image{
+  width:30rpx;
+  height:30rpx;
+  vertical-align:middle;
+  margin-right:15rpx;
+}
+.play view{
+  height:60rpx;
+  line-height:60rpx;
+  padding:0 20rpx;
+}
+/*模糊背景*/
+.bg-blur{
+  background:rgba(200,200,200,.4);
+}
+/*箭头*/
+.arrow{
+  position:relative;
+}
+.arrow::after{
+  content:'';
+  display:block;
+  width:15rpx;
+  height:15rpx;
+  border-right:1px solid #ddd;
+  border-top:1px solid #ddd;
+  transform:rotate(45deg);
+  position:absolute;
+  top:40%;
+  left:90%;
+}
+/*播放器列表*/
+.playlist{
+  width:100%;
+  position:fixed;
+  bottom:0;
+  overflow:auto;
+  background:rgba(72,104,104,.9);
+  transition: all .4s ease-out;
+}
+.playlist>view{
+  width:100%;
+  height:70rpx;
+  line-height:70rpx;
+  padding-left:20rpx;
+  font-size:14px;
+  border-bottom:1rpx dashed #999;
+}
+.playlist.hidden{
+  height:0rpx;
+}
+.playlist.show{
+  height:600rpx;
+}
+/*关闭播放列表箭头*/
+.close{
+  position:absolute;
+  z-index:3;
+  top:20rpx;
+  right:30rpx;
+  width:30rpx;
+  height:30rpx;
+  transform:rotate(180deg)
+}
